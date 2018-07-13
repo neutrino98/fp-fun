@@ -1,8 +1,9 @@
 /*
  third lesson
+ Either monad
 */
 
-//const Either = Right || Left 
+const Either = Right || Left 
 
 const Right = x => 
 ({
@@ -34,6 +35,8 @@ const result = findColor('green')
 //console.log(result)
 
 module.exports = {
+    Either: Either, 
     Right: Right, 
-    Left: Left
+    Left: Left,
+    fromNullable: fromNullable
 }
